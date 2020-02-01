@@ -1,0 +1,1 @@
+httpswww.fotojet.comappsentry=collage&category=photo-grid

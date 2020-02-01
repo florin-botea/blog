@@ -1,0 +1,46 @@
+.share.share--row {
+  @apply flex flex-wrap content-center;
+}
+.share__item--main {
+	@apply flex;
+	i {
+		@apply block self-center;
+	}
+}
+.share__icon {
+  background-image: url('/images/social_media.png');
+  background-size: 400%; /* x4 imagini per rand */
+  transition: all 0.3s;
+  @extend .square;
+  @extend ._dynamicHeight;
+}
+.share {
+  i {
+    vertical-align: middle;
+  }
+  .share__item {
+    @apply h-12;
+    cursor: pointer;
+    @apply flex rounded mx-2 bg-gray-100 shadow-md;
+    &:hover {
+      @apply bg-gray-200 shadow-none;
+    }
+  }
+}
+.share.share--smallItems {
+  .share__item {
+    @apply h-8;
+  }
+}
+.share__icon--facebook {
+  background-position: 0px 0px;
+}
+.share__icon--facebookMessenger {
+  background-position: -100% 0px;
+}
+.share__icon--twitter {
+  background-position: 0 -100%;
+}
+.share__icon--whatzapp {
+  background-position: -100% -100%;
+}

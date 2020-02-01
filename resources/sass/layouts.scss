@@ -1,0 +1,37 @@
+.content {
+  @apply flex flex-wrap p-2;
+  .content__main {
+    @apply w-full p-2;
+  }
+  .content__extras {
+    @apply w-full p-2;
+  }
+}
+.main__articlesList {
+  @apply pl-0;
+}
+.extras {
+  .searchForm {
+    @apply flex;
+  }
+  .searchForm__input {
+
+  }
+  .searchForm__submit {
+
+  }
+}
+
+@screen md {
+  .content {
+    .content__main {
+      @apply w-2/3 p-8;
+    }
+    .content__extras {
+      @apply w-1/3 p-8;
+    }
+  }
+  .main__articlesList {
+    @apply pl-8;
+  }
+}

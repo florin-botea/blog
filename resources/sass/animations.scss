@@ -1,0 +1,23 @@
+.--underline {
+	&:after {
+		transition: width 0.3s;
+		content: '';
+		height: 2px;
+		width: 0%;
+	}
+	&:hover {
+		&:after {
+			width: 100%;
+		}
+	}
+}
+.--underline._rtl {
+	&:after {
+		@apply block ml-auto relative;
+	}
+}
+.--underline._green {
+	&:after {
+		@apply bg-green-500;
+	}
+}

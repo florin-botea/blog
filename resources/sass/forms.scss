@@ -1,0 +1,12 @@
+.input {
+  @apply w-full flex flex-wrap;
+  .input__label {
+
+  }
+  .input__control {
+    @apply w-full;
+  }
+}
+.input.input--row {
+  @apply flex-no-wrap;
+}
